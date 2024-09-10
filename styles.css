@@ -1,0 +1,27 @@
+.table {
+    max-width: 320px;
+    cursor: pointer;
+}
+
+form select {
+    max-width: 64px;
+}
+
+.livro.bg-ativo {
+    background-color: #86fd9f;
+}
+
+.paginas.bg-ativo {
+    background-color: #80f4ff;
+}
+
+#animals img {
+    transition: max-width 0.15s ease-out;
+    max-width: 80px;
+    height: auto;
+}
+
+#animals img.with-zoom {
+    max-width: 144px;
+    height: auto;
+}

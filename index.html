@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atividade DOM</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container d-flex flex-column gap-5 py-5">
+    <section>
+        <h3 class="mb-3">Questão 1</h3>
+        <table class="table border-1 border user-select-none">
+            <thead>
+            <tr>
+                <th id="header_livro">Livro</th>
+                <th id="header_paginas">Páginas</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="livro">Em Busca de Sentido</td>
+                <td class="paginas">230</td>
+            </tr>
+            <tr>
+                <td class="livro">A Abolição do Homem</td>
+                <td class="paginas">92</td>
+            </tr>
+            <tr>
+                <td class="livro">O Custo do Discipulado</td>
+                <td class="paginas">77</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 class="mb-3">Questão 2</h3>
+        <form>
+            <div class="d-flex gap-3 align-items-center">
+                <label for="qtd_campos" class="form-label mb-0">Quantos campos de texto deseja criar?</label>
+                <select name="qtd_campos" id="qtd_campos" class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="criar_campos" type="button" class="btn btn-primary px-3 py-1 fw-semibold">Criar campos
+                </button>
+            </div>
+            <div id="container_campos_de_texto" class="d-flex flex-column gap-2 mt-4"></div>
+        </form>
+    </section>
+
+    <section>
+        <div class="d-flex gap-3 align-items-center mb-3">
+            <h3 class="m-0">Questão 3</h3>
+            <button id="zoom_in" class="btn btn-primary p-2"><img src="img/zoom-in.svg" alt=""></button>
+            <button id="zoom_out" class="btn btn-primary p-2"><img src="img/zoom-out.svg" alt=""></button>
+        </div>
+        <ul id="animals" class="list-unstyled d-flex gap-3">
+            <li><img src="img/animal1.png" alt=""></li>
+            <li><img src="img/animal3.jpeg" alt=""></li>
+            <li><img src="img/animal2.jpg" alt=""></li>
+            <li><img src="img/animal4.jpg" alt=""></li>
+            <li><img src="img/ugly5.jpg" alt=""></li>
+        </ul>
+    </section>
+</main>
+
+<script src="js/bootstrap.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
